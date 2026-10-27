@@ -1,0 +1,11 @@
+{
+  "name": "TradeVault — Trading Journal",
+  "short_name": "TradeVault",
+  "description": "Private trading journal and performance dashboard",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#090c11",
+  "theme_color": "#0a0d12",
+  "icons": []
+}
