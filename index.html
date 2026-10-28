@@ -37,4 +37,13 @@ function exportBackup(){const blob=new Blob([JSON.stringify({app:'TradeVault',ve
 // Keep the first-run state intentionally empty; user's CSV is imported only when they choose it.
 resetForm();render();if('serviceWorker'in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
 })();
-</script></body></html>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.tradeVaultSupabase = window.supabase.createClient(
+    "https://eiufxgqznpwrrocxgcna.supabase.co",
+    "sb_publishable_eGyLsYnOrXQg4ywqNhRIFQ_5iOy78vV"
+  );
+  console.log("TradeVault: Supabase client initialized.");
+</script>
+</body></html>
